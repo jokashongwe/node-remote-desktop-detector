@@ -1,0 +1,25 @@
+{
+  "name": "remote-desktop-detector",
+  "version": "1.0.0",
+  "description": "Node Remote Session Detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokashongwe/node-remote-desktop-detector.git"
+  },
+  "keywords": [
+    "node",
+    "remote",
+    "sesssion",
+    "detector"
+  ],
+  "author": "Jonathan Kashongwe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jokashongwe/node-remote-desktop-detector/issues"
+  },
+  "homepage": "https://github.com/jokashongwe/node-remote-desktop-detector#readme"
+}
