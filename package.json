@@ -1,55 +1,29 @@
 {
-  "_from": "git+https://github.com/jokashongwe/node-remote-desktop-detector.git",
-  "_id": "remote-desktop-detector@1.0.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/remote-desktop-detector",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/jokashongwe/node-remote-desktop-detector",
-    "rawSpec": "https://github.com/jokashongwe/node-remote-desktop-detector",
-    "saveSpec": "git+https://github.com/jokashongwe/node-remote-desktop-detector.git",
-    "fetchSpec": "https://github.com/jokashongwe/node-remote-desktop-detector.git",
-    "gitCommittish": null
+  "name": "remote-desktop-detector",
+  "version": "1.0.0",
+  "description": "Node Remote Desktop Detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/jokashongwe/node-remote-desktop-detector.git#97033b0b9504c42c8595b41c5cbacf0bc6af574e",
-  "_spec": "https://github.com/jokashongwe/node-remote-desktop-detector",
-  "_where": "C:\\Users\\jonathan.kashongwe\\Documents\\InsseProjects\\sebv3",
-  "author": {
-    "name": "Jonathan Kashongwe"
-  },
-  "bugs": {
-    "url": "https://github.com/jokashongwe/node-remote-desktop-detector/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Node Remote Session Detector",
   "files": [
     "index.js",
     "index.d.ts",
     "vendor/*.exe"
   ],
-  "homepage": "https://github.com/jokashongwe/node-remote-desktop-detector#readme",
-  "keywords": [
-    "node",
-    "remote",
-    "sesssion",
-    "detector"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "remote-desktop-detector",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jokashongwe/node-remote-desktop-detector.git"
   },
-  "scripts": {
-    "test": "node index.js"
+  "keywords": [
+    "node",
+    "remote",
+    "desktop"
+  ],
+  "author": "Jonathan Kashongwe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jokashongwe/node-remote-desktop-detector/issues"
   },
-  "version": "1.0.0"
+  "homepage": "https://github.com/jokashongwe/node-remote-desktop-detector#readme"
 }
