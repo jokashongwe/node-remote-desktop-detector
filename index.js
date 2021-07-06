@@ -1,9 +1,17 @@
-const { exec } = require('child_process');
+//const { exec } = require('child_process');
+const util = require('util');
+const path = require('path');
+const childProcess = require('child_process');
+const execFile = util.promisify(childProcess.execFile);
 
-exports.IsRemoteDesktopSession = function (callback) {
-    if (process.platform == "win32") {
-        exec("./win/RemoteSessionDetector.exe | findstr /i true", callback);
-    } else {
-        return "Not Supported!"
-    }
+const TEN_MEGABYTES = 1000 * 1000 * 10;
+
+exports.IsRemoteDesktopSession = async () => {
+    const binPath = path.join(__dirname, "vendor", "RemoteSessionDetector.exe");
+    const { stdout } = await execFile(binPath, {
+        maxBuffer: TEN_MEGABYTES,
+        windowsHide: true
+    });
+    let result = stdout.trim();
+    return (result == "true" || result == "True")
 }
